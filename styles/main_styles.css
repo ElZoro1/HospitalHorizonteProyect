@@ -414,7 +414,7 @@ section
 }
 
 /* Estilos para los botones */
-.main_nav ul li button {
+.main_nav ul li button.btn-primary {
     font-size: 15px;
     font-weight: 400;
     padding: 10px 20px; /* Espaciado interno del botón */
@@ -438,7 +438,7 @@ section
 .main_nav ul li button.btn-secondary {
     font-size: 15px;
     font-weight: 400;
-    padding: 10px 30px; /* Espaciado interno */
+    padding: 15px 45px; /* Espaciado interno */
     color: black; /* Color del texto */
     background-color: #ffffff; /* Fondo blanco */
     border: none;
@@ -839,203 +839,12 @@ section
 5. Icon Boxes
 *********************************/
 
-.icon_boxes
-{
-	width: 100%;
-	padding-top: 123px;
-	padding-bottom: 129px;
-}
-.icon_box_title
-{
-	padding-right: 50px;
-	
-}
-.icon_box_title h1
-{
-	line-height: 1.25;
-}
-.icon_box_button
-{
-	margin-top: 40px;
-}
-.icon_box_button:hover
-{
-	background: #452b78;
-}
-.icon_box_button:hover a
-{
-	color: #FFFFFF;
-}
-.icon_box_col
-{
-	padding-top: 21px;
-}
-.icon_box_item
-{
-	margin-bottom: 63px;
-}
-.icon_box_item:last-child
-{
-	margin-bottom: 0px;
-}
-.icon_box_item h2
-{
-	margin-bottom: 21px;
-}
-.icon_box_item p
-{
-	margin-bottom: 0px;
-}
 
 /*********************************
 6. Vertical Slider Section
 *********************************/
 
-.v_slider_section
-{
-	height: 625px;
-	padding-bottom: 65px;
-}
-.v_slider_section_image
-{
-	
-}
-.v_slider_image
-{
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 0;
-	box-shadow: 0px 45px 59px rgba(24, 29, 33, 0.23);
-}
-.v_slider_content
-{
-	
-}
-.v_slider_container
-{
-	
-}
-.v_slider
-{
-	
-}
-.v_slider_item
-{
-	border: none !important;
-}
-.v_slider_item:focus
-{
-	outline: none !important;
-	border: none !important;
-}
-.v_slider_item h1
-{
-	line-height: 52px;
-}
-.v_slider_item h1:last-of-type
-{
-	margin-bottom: 81px;
-}
-.person
-{
-	margin-top: 67px;
-}
-.person_image
-{
-	width: 44px;
-	height: 44px;
-}
-.person_image img
-{
-	width: 100%;
-}
-.person_meta
-{
-	padding-left: 28px;
-}
-.person_name
-{
-	font-size: 15px;
-	color: #28262d;
-	margin-top: -5px;
-	margin-bottom: -6px;
-}
-.person_title
-{
-	font-size: 13px;
-	color: #909090;
-}
-.v_slider .slick-dots
-{
-	position: absolute;
-	top: 50%;
-	right: -145px;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-.v_slider .slick-dots
-{
-	width: 18px;
-}
-.v_slider .slick-dots li
-{
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	height: 35px;
-}
-.v_slider .slick-dots li.slick-active
-{
-	
-}
-.v_slider .slick-dots li button
-{
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	border: none;
-	text-indent: -9999px;
-	cursor: pointer;
-	background: #d6cbed;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.v_slider .slick-dots li button:focus,
-.v_slider .slick-dots li button:active
-{
-	outline: none !important;
-	border: none !important;
-}
-.v_slider .slick-dots li.slick-active button
-{
-	width: 18px;
-	height: 18px;
-	background: #452b78;
-}
+
 
 /*********************************
 7. Services
