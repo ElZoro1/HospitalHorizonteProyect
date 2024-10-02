@@ -643,7 +643,7 @@ section
 }
 .hero_slider_nav div:hover i
 {
-	color: #251343;
+	color: #9276c0;
 }
 .hero_side_text_container
 {
@@ -652,7 +652,7 @@ section
 	right: 285px;
 	width: 865px;
 	height: 236px;
-	background: #301b55;
+	background: #286e83;
 	z-index: 9;
 	transform-origin: top right;
 	-webkit-transform: rotate(-90deg);
@@ -674,7 +674,7 @@ section
 	display: block;
 	font-size: 30px;
 	font-weight: 300;
-	color: #9878e2;
+	color: #ffffff;
 }
 .hero_side_text p
 {
