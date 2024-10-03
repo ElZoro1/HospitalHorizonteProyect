@@ -459,57 +459,82 @@ section
 3.1.3 Search
 *********************************/
 
-.search
-{
-	display: inline-block;
-	margin-right: 49px;
-	width: 237px;
-	height: 100%;
-}
-.search_content
-{
+/* From Uiverse.io by SoloResearchLab */ 
+.button-group {
+	display: flex;
+	background-color: white;
+	padding: 5px; /* 1.25rem assuming base font size is 12px */
+	box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+	  0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+	border-radius: 10px;
+	right:30px ;
+  }
+  
+  .button-container {
+	display: flex;
 	width: 100%;
-	height: 100%;
-}
-.search_button
-{
-	width: 40px;
-	height: 40px;
-	background: transparent;
-	cursor: pointer;
-}
-.search_button:active
-{
-	background: #301b54;
-}
-.search_form
-{
-	position: absolute;
-	right: 0;
-	top: 90px;
-	width: 237px;
-	height: 40px;
-	visibility: hidden;
-	opacity: 0;
-}
-.search_form.active
-{
-	top: 75px;
-	visibility: visible;
-	opacity: 1;
-}
-.search_input
-{
-	width: 100%;
-	height: 100%;
-	background: #FFFFFF;
-	color: #1b0b32;
-	padding-left: 20px;
-	outline: none !important;
-	border: none !important;
-	box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
-}
-
+	padding: 5px; /* 1.5rem */
+	border-radius: 10px;
+  }
+  
+  .button-container a {
+	color: #3b82f6; /* light-blue-light */
+	border: 1px solid transparent;
+	display: inline-flex;
+	align-items: center;
+	margin-right: 20px; /* 4 * 5 (assuming 1 unit = 5px) */
+	padding: 10px; /* 2.5 * 4 */
+	background-color: #f3f4f6; /* light-secondary */
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 9999px;
+	font-size: 14px;
+	text-align: center;
+	transition: all 0.2s ease;
+  }
+  
+  .button-container a:last-child {
+	margin-right: 0;
+  }
+  
+  .button-container a:hover {
+	color: black;
+	border-color: #3b82f6; /* light-blue-light */
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-container a svg {
+	width: 20px; /* 5 * 4 */
+	height: 20px;
+	fill: currentColor;
+  }
+  
+  /* Dark Mode Styles */
+  @media (prefers-color-scheme: dark) {
+	.button-group {
+	  background-color: #1C3D47; /* box-dark */
+	  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.5),
+		0px 2px 4px -1px rgba(0, 0, 0, 0.3);
+	}
+  
+	.button-container {
+	  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	}
+  
+	.button-container a {
+	  color: #9ca3af; /* gray-400 */
+	  background-color: #374151; /* button-curved-default-dark */
+	  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+	}
+  
+	.button-container a:hover,
+	.button-container a:focus,
+	.button-container a:active {
+	  background-color: #4b5563; /* button-curved-pressed-dark */
+	  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+	}
+  }
+  
 /*********************************
 3.1.4 Hamburger
 *********************************/
