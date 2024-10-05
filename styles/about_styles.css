@@ -136,6 +136,7 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
+
 h1::selection, 
 h2::selection, 
 h3::selection, 
@@ -746,7 +747,93 @@ section
 /*********************************
 6. Vertical Slider Section
 *********************************/
-
+.for 
+	{
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #f0f4f8; 
+			margin: 0;
+			padding: 20px;
+		}
+		
+		.container {
+			max-width: 600px;
+			margin: 50px auto;
+			padding: 30px;
+			background: #ffffff; 
+			border-radius: 15px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+			border: 1px solid #e0e0e0; /
+		}
+		
+		h1 {
+			text-align: center;
+			color: #008080; 
+			margin-bottom: 20px;
+			font-size: 2.5rem; 
+		}
+		
+		label {
+			display: block;
+			margin: 15px 0 5px;
+			font-weight: bold;
+			color: #333;
+		}
+		
+		input[type="text"],
+		input[type="date"],
+		input[type="time"],
+		select,
+		textarea {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc; 
+			border-radius: 8px; 
+			margin-bottom: 20px;
+			font-size: 1rem;
+			transition: border-color 0.3s, box-shadow 0.3s; /
+		}
+		
+		input[type="text"]:focus,
+		input[type="date"]:focus,
+		input[type="time"]:focus,
+		select:focus,
+		textarea:focus {
+			border-color: #008080; 
+			box-shadow: 0 0 5px rgba(255, 111, 97, 0.5); 
+			outline: none; 
+		}
+		
+		button {
+			background-color: #008080; 
+			color: white;
+			padding: 12px;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			width: 100%;
+			font-size: 1.1rem; 
+			display: flex; 
+			align-items: center; 
+			justify-content: center; 
+			transition: background-color 0.3s, transform 0.2s; 
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+		}
+		
+		button:hover {
+			background-color: #008080; 
+			transform: translateY(-2px); 
+		}
+		
+		button .svg-wrapper {
+			margin-right: 10px; 
+		}
+		
+		textarea {
+			resize: none; 
+		}
+		
+	}
 .v_slider_section
 {
 	height: 604px;
@@ -857,10 +944,7 @@ section
 	align-items: center;
 	height: 35px;
 }
-.v_slider .slick-dots li.slick-active
-{
-	
-}
+
 .v_slider .slick-dots li button
 {
 	width: 10px;
@@ -933,13 +1017,10 @@ section
 	width: 263px;
 	height: 263px;
 }
-.team_member_image img
-{
-	position: absolute;
-	top: -71px;
-	left: -99px;
-	width: 100%;
-	height: auto;
+.team_member_image img {
+    width: 97%; 
+    height: auto;
+    margin-bottom: 20px; 
 }
 .team_member_content
 {
@@ -1035,10 +1116,6 @@ section
 {
 	padding-top: 110px;
 	padding-bottom: 141px;
-}
-.newsletter_title
-{
-
 }
 .newsletter_title h1
 {
