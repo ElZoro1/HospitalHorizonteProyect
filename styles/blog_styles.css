@@ -324,30 +324,31 @@ section
 3.1 Header
 *********************************/
 
-.header
-{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 128px;
-	background: #1C3D47;
-	z-index: 10;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 128px;
+    background: #1C3D47;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px; /* Ajuste de padding para darle espacio al contenido */
 }
-.header.scrolled
-{
-	height: 80px;
-	background: rgba(27, 11, 51, 0.92);
+.header.scrolled {
+    height: 80px;
+    background: rgba(27, 11, 51, 0.92);
 }
 
 /*********************************
 3.1.1 Logo
 *********************************/
 .logo {
-    padding-left: 37px;
-    flex-basis: 50%;
+    padding-left: 10px;
     display: flex;
-    align-items: center; /* Para alinear el logo y el texto verticalmente */
+    align-items: center;
 }
 
 .logo a {
@@ -357,19 +358,22 @@ section
     letter-spacing: 0.1em;
     line-height: 128px;
     display: flex;
-    align-items: center; /* Alinea el contenido del enlace */
+    align-items: center;
 }
 
 .logo a img {
-    max-height: 100px; /* Aumenta el tamaño del logo */
-    margin-right: 10px; /* Mantén el espacio entre el logo y el texto */
+    max-height: 100px;
+    margin-right: 10px;
 }
-
 
 .logo a span {
     font-weight: 800;
     color: #ff6b09;
     text-transform: uppercase;
+}
+
+.titulo {
+	color: white;
 }
 
 
@@ -378,26 +382,22 @@ section
 *********************************/
 
 .main_nav {
-    flex-basis: 200%;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 
 .main_nav ul {
-    display: inline-block;
-    margin-right: 100px;
-    -webkit-transform: translateY(-4px);
-    -moz-transform: translateY(-4px);
-    -ms-transform: translateY(-4px);
-    -o-transform: translateY(-4px);
-    transform: translateY(-4px);
+    display: flex;
+    align-items: center;
 }
 
 .main_nav ul li {
-    display: inline-block;
-    margin-right: 65px;
+    margin-right: 40px;
 }
 
 .main_nav ul li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .main_nav ul li a {
@@ -406,6 +406,7 @@ section
     font-weight: 400;
     line-height: 40.51px;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .main_nav ul li.active a {
@@ -413,18 +414,18 @@ section
 }
 
 /* Estilos para los botones */
-.main_nav ul li button.btn-primary {
+.main_nav ul li button {
     font-size: 15px;
     font-weight: 400;
-    padding: 10px 20px; /* Espaciado interno del botón */
-    color: black; /* Cambiar el color del texto a negro */
-    background-color: #ffffff; /* Mantiene el fondo blanco */
+    padding: 10px 20px;
+    color: #000;
+    background-color: #ffffff;
     border: none;
-    border-radius: 50px; /* Hace el botón ovalado */
+    border-radius: 50px;
     cursor: pointer;
     line-height: 40.51px;
-    display: flex; /* Para alinear la imagen y el texto */
-    align-items: center; /* Centrar verticalmente */
+    display: flex;
+    align-items: center;
 }
 
 .btn-icon {
@@ -447,6 +448,7 @@ section
     display: flex; /* Para alinear la imagen y el texto */
     align-items: center; /* Centrar verticalmente */
 }
+
 
 /* Espaciado entre botones y otros enlaces */
 .main_nav ul li button + li {
@@ -1018,12 +1020,16 @@ section
 7. Footer
 *********************************/
 
-.footer
-{
-	padding-top: 99px;
-	padding-bottom: 82px;
-	border-top: solid 1px #dcdcdc;
+footer {
+    margin: 0; /* Asegúrate de que no haya margen */
+    padding: 20px; /* Ajusta el padding si es necesario */
+    background-color: #1C3D47; /* Color de fondo del footer */
+    color: #ffffff; /* Color del texto del footer */
+    position: relative; /* O fixed si quieres que permanezca en la parte inferior de la pantalla */
+    bottom: 0; /* Asegúrate de que esté en la parte inferior */
+    width: 100%; /* Asegúrate de que el footer ocupe el ancho completo */
 }
+
 .footer_logo
 {
 	padding-left: 0px;
@@ -1067,6 +1073,7 @@ section
 }
 .footer_cr
 {
+	align-items: center center;
 	font-size: 16px;
 	font-weight: 500;
 	color: #cacaca;
@@ -1113,4 +1120,60 @@ section
 .footer_col ul li a:hover
 {
 	color: #28262d;
+}
+
+.logopadding{
+	padding: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexboxx {
+    display: flex;
+    align-items: center;
+	width: 100%;
+}
+
+.logopadding {
+    margin-right: 20px; /* Ajusta el espaciado a tu gusto */
+}
+
+.content {
+	padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.select-doc {
+    margin-top: 10px;
+}
+
+#documentacion, #rut {
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+.btn:hover {
+	cursor: pointer;
+}
+
+.super_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que la página siempre ocupe el 100% de la ventana */
+}
+
+.container {
+    flex-grow: 1; /* Hace que el contenedor crezca y ocupe el espacio restante */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+	padding: 110px;
 }
