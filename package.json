@@ -1,0 +1,16 @@
+{
+  "name": "HospitalHorizonteProyect-main",
+  "version": "1.0.0",
+  "description": "Proyecto para Hospital Horizonte",
+  "main": "sendEmail.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^6.9.15"
+  }
+}

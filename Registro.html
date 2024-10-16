@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HospitalHorizonte - Agenda Tu Hora</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="RanGO Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/blog_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
+</head>
+
+<body>
+    <div class="super_container">
+        <!-- Header -->
+        <header class="header d-flex flex-row justify-content-end align-items-center trans_200">
+            <div class="logo mr-auto" style="display: flex; align-items: center;">
+                <a href="Home.html"><img src="imageshospital/image.png" alt="Hospital Horizonte"></a>
+                <span class="titulo" style="font-size: 24px; font-weight: bold;">Hospital Horizonte</span>
+            </div>
+            <nav class="main_nav justify-self-end text-right">
+                <ul>
+                    <li>
+                        <button class="btn-primary">
+                            <img src="imageshospital/Logoboton1.png" class="btn-icon"> 
+                            Centro de ayuda
+                        </button>
+                    </li>
+                    <li>
+                        <a href="Registro.html">
+                            <button class="btn-primary">
+                                <img src="imageshospital/Logoboton2.png" class="btn-icon"> 
+                                Agenda Tu Hora
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger_container bez_1">
+                <i class="fas fa-bars trans_200"></i>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="container">
+            <div class="flexboxx">
+                <img class="logopadding" src="imageshospital/image.png" alt="">
+                <div class="content">
+                    <h1>Reserva Tu Hora</h1>
+                    <label for="documentacion" class="select-doc">Seleccione La Documentación</label>
+                    <select id="documentacion">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="rut">RUT</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+
+                    <input type="text" placeholder="Ingrese RUT" id="rut" disabled style="display:none;">
+                    <small id="error-message-rut" style="color: red; display:none;"></small>
+
+                    <input type="text" placeholder="Ingrese Pasaporte" id="pasaporte" disabled style="display:none;">
+                    <small id="error-message-pasaporte" style="color: red; display:none;"></small>
+
+                    <a href="Reserva.html" id="continuar-button" style="display:none;">
+                        <button class="btn">Continuar</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="containerfooter">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer_intro">
+                            <div class="footer_logo">
+                                <a href="#"><img src="imageshospital/image.png" alt="Hospital Horizonte"></a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_cr">
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | @HospitalHorizonte<i class="fa fa-heart" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="styles/bootstrap4/popper.js"></script>
+    <script src="styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="plugins/greensock/TweenMax.min.js"></script>
+    <script src="plugins/greensock/TimelineMax.min.js"></script>
+    <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="plugins/greensock/animation.gsap.min.js"></script>
+    <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+    <script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+</html>
